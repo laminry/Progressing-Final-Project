@@ -1,0 +1,132 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Residence</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Rooms</a>
+      </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reservation</a>
+            </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a href="#login" data-toggle="modal"><button class="btn btn-outline-success my-2 my-sm-0 glyphicon glyphicon-user" type="button">Login</button></a>
+    </form>
+  </div>
+</nav>
+
+
+<div class="jumbotron">
+  <form action="">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Check-In</th>
+          <th>Check-Out</th>
+          <th>No. Adults</th>
+          <th>No. Children</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            <input class="form-control" type="text" id="Datepicker2">
+          </th>
+          <td>
+            <input class="form-control" type="text" id="Datepicker1">
+          </td>
+          <td>
+            <div class="form-group">
+              <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <div class="form-group">
+              <select class="form-control" id="sel1l">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+    
+      </tbody>
+    
+    </table>
+  </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="login" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form action="connection.php" method="POST">
+          <div class="modal-header">
+            <h5 class="modal-title">Operator Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group" align="center">
+              <label id="inputuser">Ennter User ID</label>
+              <input type="text" class="form-control" id="inputuser" placeholder="Enter User ID">
+            </div>
+			  <div class="form-group" align="center">
+              <label id="inputpassword">Enter User Password </label>
+              <input type="text" class="form-control" id="inputpassword" placeholder="Enter Password">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
