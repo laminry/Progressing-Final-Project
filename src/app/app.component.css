@@ -1,0 +1,70 @@
+.body{
+    background-image: url('../assets/img/mainback.jpg');
+        background-repeat: repeat;
+    background-size:cover;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.navbar{
+    border-radius: 5px;
+}
+
+nav a{
+color:white;
+}
+
+nav a:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+    color: red;
+    background-color: white;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    
+}
+
+modalbtn:hover{
+        transform: scale(1.2);
+    border-radius: 10px;
+    color: red;
+    background-color: white;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+}
+
+input:hover{
+    background-color: rgb(223, 157, 66);
+    transform: scale(1.1);
+      transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  backface-visibility: hidden;
+	
+}
+
+
+.page-footer {
+    background-color: #0090F7;
+    border: black;
+    bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.footer-copyright  {
+    color: white;
+    background-color:black;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.page-footer > info{
+    font-size: 1rem;
+    color: white;
+}
+.text-uppercase{
+    color: white;
+    margin-top: 0%;
+}
+.footerlinks{
+    color: red;
+}

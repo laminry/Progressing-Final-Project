@@ -1,0 +1,17 @@
+.formcontainer{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: white;
+    bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+    color: white;
+}
+
+.innerform{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+
+}

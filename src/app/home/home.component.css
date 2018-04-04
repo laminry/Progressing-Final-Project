@@ -1,0 +1,29 @@
+
+
+.jumbotron input:hover, select:hover
+{	
+    background-color: rgb(223, 157, 66);
+    transform: scale(1.1);
+      transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  backface-visibility: hidden;
+	
+}
+
+.jumbotron
+{	
+	margin-top: 100px;
+	background-color: rgba(0,0,0,0.61);
+	color: white;
+	height: 300px;
+    border: groove;
+}
+
+.jumbotron input, option
+{	
+	color: black;
+	
+}
+
+
+

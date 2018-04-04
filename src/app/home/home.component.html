@@ -1,0 +1,56 @@
+<br>
+<div class="jumbotron">
+  <div class="panel panel-primary">
+    <div class="panel-body">
+      <form #searchform="ngForm">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Check-In</th>
+              <th>Check-Out</th>
+              <th>No. Adults</th>
+              <th>No. Children</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <input type="text" class="form-control" bsDatepicker id="checkin" placeholder="Check In-Date" name="Check In-Date" [(ngModel)]="checkin">
+              </th>
+              <td>
+                <input type="text" class="form-control" bsDatepicker id="checkout" placeholder="Check In-Date" name="Check Out-Date" [(ngModel)]="checkout">
+              </td>
+              <td>
+                <div class="form-group">
+                  <select class="form-control" id="noadults" name="No. Adults" [(ngModel)]="noadults">
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <select class="form-control" id="nochildren" name="No. Children" [(ngModel)]="nochildren">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </form>
+      <div class="panel-footer" align="right">
+        <button type="submit" class="btn btn-danger">Search</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{{searchform.value | json }}
+
