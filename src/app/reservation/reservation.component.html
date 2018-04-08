@@ -1,100 +1,101 @@
 <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="col-sm-6 formholer">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">RESERVATION</h5>
+      <div class="carousell">
+      </div>
+      <div class="container formcontainer">
+        <div class="innerform">
+          <form #reservationform="ngForm" (ngSubmit)="reservationinfo(reservationform)">
+            <div class="form-group">
+              <label for="inputname">Name</label>
+              <input type="text" class="form-control col-sm-12" id="inputname" placeholder="Enter Name" name="Name" [(ngModel)]="inputname">
+
+            </div>
+            <div class="form-group">
+              <label for="inputname">Email</label>
+              <input type="email" class="form-control col-sm-12" id="inputemail" placeholder="Enter Email" name="Email" [(ngModel)]="inputemail">
+            </div>
+            <div class="form-group">
+              <label for="inputname">Passport/ID</label>
+              <input type="email" class="form-control col-sm-12" id="inpassid" placeholder="Enter Passport/ID" name="Passport/ID" [(ngModel)]="inpassid">
+            </div>
+            <div class="form-group">
+              <label for="inputname">Room Type</label>
+              <select class="form-control col-sm-12" id="roomtype" name="Room Type" [(ngModel)]="roomtype">
+                <option>Deluxe Room</option>
+                <option>Superior Room</option>
+                <option>Executive Room</option>
+                <option>Cabana</option>
+                <option>Master Suite</option>
+                <option>Premier Room</option>
+                <option>Studio Room</option>
+                <option>King Room</option>
+                <option>Queen Room</option>
+
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="checkin">Check In-Date</label>
+              <input type="text" class="form-control col-sm-12" bsDatepicker  id="checkin" placeholder="Check In-Date" name="Check In-Date"
+                [(ngModel)]="checkin">
+
+            </div>
+            <div class="form-group">
+              <label for="checkout">Check Out-Date</label>
+              <input type="text" class="form-control col-sm-12" bsDatepicker id="checkout" placeholder="Check Out-Date" name="Check Out-Date"
+                [(ngModel)]="checkout">
+
+            </div>
+            <div class="form-group">
+              <label for="noadults">No. Adults</label>
+              <select class="form-control col-sm-12" id="noadults" name="No. Adults" [(ngModel)]="noadults">
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nochildren">No. Children</label>
+              <select class="form-control col-sm-12" id="nochildren" name="No. Children" [(ngModel)]="nochildren">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="additional">Additional</label>
+              <textarea class="form-control col-sm-12" rows="5" id="additional" name="Additional Request" [(ngModel)]="additional">
+              </textarea>
+            </div>
+            <button type="submit" class="btn btn-success">
+              <strong> Book Room </strong>
+            </button>
+          </form>
+
+        </div>
+
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
+</div>
+
+
+
+
+  <div class="col-sm-6 formholer">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">RESERVATION CENTER</h5>
+        <p class="card-text">Kindly contact us for any changes requires. Only availble 3 nights before checkin.</p>
+        <a href="#" class="btn btn-danger" routerLink="/rooms">CHECK OUR ROOMS</a>
       </div>
     </div>
   </div>
+  
 </div>
 
 
-<div class="carousell">
-</div>
-<br>
-<div class="container formcontainer">
-  <div class="innerform">
-    <p class="h5 text-center mb-4"> Reservation</p>
-    <form #reservationform="ngForm" (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <label for="inputname">Name</label>
-        <input type="text" class="form-control col-sm-4" id="inputname" placeholder="Enter Name" name="Name" [(ngModel)]="inputname">
-
-      </div>
-      <div class="form-group">
-        <label for="inputname">Email</label>
-        <input type="email" class="form-control col-sm-4" id="inputemail" placeholder="Enter Email" name="Email" [(ngModel)]="inputemail">
-      </div>
-      <div class="form-group">
-        <label for="inputname">Passport/ID</label>
-        <input type="email" class="form-control col-sm-4" id="inpassid" placeholder="Enter Passport/ID" name="Passport/ID" [(ngModel)]="inpassid">
-      </div>
-      <div class="form-group">
-        <label for="inputname">Room Type</label>
-        <select class="form-control col-sm-4" id="roomtype" name="Room Type" [(ngModel)]="roomtype">
-          <option>Deluxe Room</option>
-          <option>Superior Room</option>
-          <option>Executive Room</option>
-          <option>Cabana</option>
-          <option>Master Suite</option>
-          <option>Premier Room</option>
-          <option>Studio Room</option>
-          <option>King Room</option>
-          <option>Queen Room</option>
-
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="checkin">Check In-Date</label>
-        <input type="text" class="form-control col-sm-4" bsDatepicker id="checkin" placeholder="Check In-Date" name="Check In-Date"
-          [(ngModel)]="checkin">
-
-      </div>
-      <div class="form-group">
-        <label for="checkout">Check Out-Date</label>
-        <input type="text" class="form-control col-sm-4" bsDatepicker id="checkout" placeholder="Check Out-Date" name="Check Out-Date"
-          [(ngModel)]="checkout">
-
-      </div>
-      <div class="form-group">
-        <label for="noadults">No. Adults</label>
-        <select class="form-control col-sm-4" id="noadults" name="No. Adults" [(ngModel)]="noadults">
-          <option>1</option>
-          <option>2</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="nochildren">No. Children</label>
-        <select class="form-control col-sm-4" id="nochildren" name="No. Children" [(ngModel)]="nochildren">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="additional">Additional</label>
-        <textarea class="form-control col-sm-4" rows="5" id="additional" name="Additional Request" [(ngModel)]="additional">
-      </textarea>
-      </div>
-      <button type="submit" class="btn btn-success">
-        <strong> Book Room </strong>
-      </button>
-    </form>
-
-  </div>
-
-</div>
 
 
 

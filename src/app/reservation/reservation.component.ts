@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-reservation',
@@ -12,4 +14,7 @@ export class ReservationComponent implements OnInit {
   ngOnInit() {
   }
 
+  reservationinfo(reservation: NgForm): void {
+    console.log(reservation.value);
+  }
 }

@@ -21,6 +21,7 @@ const appRoutes: Routes = [
   ];
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,3 +41,4 @@ const appRoutes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

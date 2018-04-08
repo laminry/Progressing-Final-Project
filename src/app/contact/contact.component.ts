@@ -16,7 +16,7 @@ export class ContactComponent implements OnInit {
   }
 
   contactmessage(guestmessage: NgForm): void {
-    console.log("test");//guestmessage.value);
+    console.log(guestmessage.value);
   }
 
 }
